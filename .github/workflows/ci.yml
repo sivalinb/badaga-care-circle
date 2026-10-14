@@ -1,0 +1,53 @@
+name: Demo software checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CARE_MODE: demo
+      CARE_TIMEZONE: Asia/Kolkata
+      CARE_DATA_DIR: ${{ runner.temp }}/care-demo
+      GRADIO_ANALYTICS_ENABLED: "False"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.lock
+      - name: Install reproducible dependencies
+        run: python -m pip install -r requirements.lock
+      - name: Run unit and integration tests
+        run: python -m pytest --junitxml=artifacts/pytest.xml
+      - name: Run bilingual offline evaluation
+        run: python -m badaga_care eval --output artifacts/evaluation.json
+      - name: Verify documentation links and illustrations
+        run: python scripts/check_docs.py
+      - name: Confirm clinical release remains blocked
+        shell: bash
+        run: |
+          set +e
+          python -m badaga_care preflight > artifacts/preflight.json
+          preflight_status=$?
+          set -e
+          test "$preflight_status" -eq 2
+          python -c 'import json; assert json.load(open("artifacts/preflight.json"))["clinical_release_allowed"] is False'
+      - name: Save synthetic verification reports
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: demo-software-checks
+          path: artifacts/
+          retention-days: 14
+          if-no-files-found: warn

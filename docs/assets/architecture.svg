@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="1100" viewBox="0 0 1320 1100" role="img" aria-labelledby="title desc">
+<title id="title">Architecture: a small system with visible boundaries</title><desc id="desc">Gradio calls scoped CareService and a fixed safety gate. Education uses bilingual retrieval, optional consented OpenAI drafts, and human review before release. Fictional workflows and minimized traces persist in SQLite. Clinical pilot gates remain unmet.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto-start-reverse"><path d="M0,0 L9,4.5 L0,9" fill="#6b8591"/></marker></defs>
+<rect width="1320" height="100%" fill="#fafbf7"/>
+<rect width="1320" height="126" fill="#183747"/>
+<text x="48" y="48" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#afe0cc">BADAGA CARE CIRCLE  /  FICTIONAL-DATA DEMO</text>
+<text x="48" y="88" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#ffffff">Architecture: a small system with visible boundaries</text>
+<text x="48" y="152" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#526b77">One local Python process; arrows show the main education path and review handover.</text>
+<rect x="48" y="190" width="360" height="160" rx="16" fill="#edf4f9" stroke="#24647d" stroke-width="1.6"/>
+<text x="70" y="220" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#24647d">INTERFACE / UI.PY + I18N.PY</text>
+<text x="70" y="250" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">English / Tamil browser</text>
+<text x="70" y="281" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Gradio Blocks and session state</text>
+<text x="70" y="305" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Residents, caretakers and reviewers</text>
+<rect x="480" y="190" width="360" height="160" rx="16" fill="#e9f5ef" stroke="#14796b" stroke-width="1.6"/>
+<text x="502" y="220" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#14796b">APPLICATION / SERVICE.PY</text>
+<text x="502" y="250" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Scoped CareService</text>
+<text x="502" y="281" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Household + role + consent</text>
+<text x="502" y="305" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Workflow ordering and fallbacks</text>
+<rect x="912" y="190" width="360" height="160" rx="16" fill="#fff5e5" stroke="#976623" stroke-width="1.6"/>
+<text x="934" y="220" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#976623">RULES / SAFETY.PY</text>
+<text x="934" y="250" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Fixed safety gate</text>
+<text x="934" y="281" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Warnings and medicine boundaries</text>
+<text x="934" y="305" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Fixed routes bypass optional AI</text>
+<polyline points="408,270 474,270" fill="none" stroke="#6b8591" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="840,270 906,270" fill="none" stroke="#6b8591" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="48" y="420" width="360" height="164" rx="16" fill="#edf4f9" stroke="#24647d" stroke-width="1.6"/>
+<text x="70" y="450" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#24647d">EVIDENCE / KNOWLEDGE.JSON</text>
+<text x="70" y="480" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">12 bilingual source cards</text>
+<text x="70" y="511" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">URLs, versions, expiry and tags</text>
+<text x="70" y="535" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Clinical / Tamil approval pending</text>
+<rect x="480" y="420" width="360" height="164" rx="16" fill="#e9f5ef" stroke="#14796b" stroke-width="1.6"/>
+<text x="502" y="450" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#14796b">RETRIEVAL / RETRIEVAL.PY</text>
+<text x="502" y="480" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Hybrid local retrieval</text>
+<text x="502" y="511" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">BM25 + character TF-IDF</text>
+<text x="502" y="535" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Optional dense score fusion</text>
+<rect x="912" y="420" width="360" height="164" rx="16" fill="#f3eefb" stroke="#7652a5" stroke-width="1.6" stroke-dasharray="8 6"/>
+<text x="934" y="450" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#7652a5">OPTIONAL CLOUD / PROVIDERS.PY</text>
+<text x="934" y="480" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">OpenAI API boundary</text>
+<text x="934" y="511" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Embeddings + structured draft</text>
+<text x="934" y="535" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Configuration and cloud consent</text>
+<polyline points="1092,350 1092,382 660,382 660,414" fill="none" stroke="#6b8591" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="718" y="374" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#526b77">general education</text>
+<polyline points="408,502 474,502" fill="none" stroke="#6b8591" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="840,502 906,502" fill="none" stroke="#6b8591" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="7 6"/>
+<rect x="48" y="604" width="360" height="46" rx="12" fill="#edf4f9" stroke="#24647d" stroke-width="1.4"/>
+<text x="66" y="633" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#24647d">Default local mode: linked excerpts</text>
+<polyline points="540,584 540,628 414,628" fill="none" stroke="#6b8591" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="48" y="668" width="360" height="164" rx="16" fill="#edf4f9" stroke="#24647d" stroke-width="1.6"/>
+<text x="70" y="698" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#24647d">PERSISTENCE / STORAGE.PY</text>
+<text x="70" y="728" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Local fictional SQLite</text>
+<text x="70" y="759" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Check-ins, tasks and family backup</text>
+<text x="70" y="783" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Review queue, traces and audits</text>
+<rect x="480" y="668" width="360" height="164" rx="16" fill="#e9f5ef" stroke="#14796b" stroke-width="1.6"/>
+<text x="502" y="698" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#14796b">HUMAN IN THE LOOP</text>
+<text x="502" y="728" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Inspect, note and decide</text>
+<text x="502" y="759" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Education: approve / reject</text>
+<text x="502" y="783" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Check-in: follow-up / close</text>
+<rect x="912" y="668" width="360" height="164" rx="16" fill="#e9f5ef" stroke="#14796b" stroke-width="1.6"/>
+<text x="934" y="698" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#14796b">RELEASE / SERVICE.PY</text>
+<text x="934" y="728" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Scoped approved draft</text>
+<text x="934" y="759" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Same language and household</text>
+<text x="934" y="783" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Recheck source version and expiry</text>
+<polyline points="660,584 660,662" fill="none" stroke="#6b8591" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="566" y="625" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#526b77">template</text>
+<polyline points="1092,584 1092,620 730,620 730,662" fill="none" stroke="#6b8591" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="7 6"/>
+<text x="854" y="611" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#526b77">validated AI draft</text>
+<polyline points="474,750 414,750" fill="none" stroke="#6b8591" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="840,750 906,750" fill="none" stroke="#6b8591" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="48" y="874" width="1224" height="82" rx="16" fill="#e9f5ef" stroke="#14796b" stroke-width="1.6"/>
+<text x="70" y="904" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#14796b">IMPLEMENTED OPERATIONAL EVIDENCE</text>
+<text x="70" y="934" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Redacted guide traces + local latency / token / fallback metrics + action audits</text>
+<rect x="48" y="980" width="1224" height="78" rx="16" fill="#fcefeb" stroke="#a34c43" stroke-width="1.6"/>
+<text x="70" y="1010" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#a34c43">FUTURE CLINICAL PILOT GATE</text>
+<text x="70" y="1040" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Named clinical owners + approved bilingual content + verified identity + protected storage</text>
+<text x="48" y="1075" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#526b77">Demo role selectors are not authentication. Current software does not place calls, send messages or book care.</text>
+</svg>

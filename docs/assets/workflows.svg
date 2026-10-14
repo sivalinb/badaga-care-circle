@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="1210" viewBox="0 0 1320 1210" role="img" aria-labelledby="title desc">
+<title id="title">Flows: turn concern into a reviewed answer and a handover</title><desc id="desc">General education goes through a safety gate and source retrieval, optional drafting, human approval and scoped release. BP check-ins require confirmation and consent. Tasks move from requested to accepted to completed. Backup plans require two adults and rehearsal.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto-start-reverse"><path d="M0,0 L9,4.5 L0,9" fill="#6b8591"/></marker></defs>
+<rect width="1320" height="100%" fill="#fafbf7"/>
+<rect width="1320" height="126" fill="#183747"/>
+<text x="48" y="48" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#afe0cc">BADAGA CARE CIRCLE  /  FICTIONAL-DATA DEMO</text>
+<text x="48" y="88" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#ffffff">Flows: turn concern into a reviewed answer and a handover</text>
+<text x="48" y="152" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#526b77">Every illustration uses fictional households. Fixed warning guidance does not wait for a reviewer.</text>
+<rect x="48" y="190" width="288" height="190" rx="16" fill="#edf4f9" stroke="#24647d" stroke-width="1.6"/>
+<text x="70" y="220" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#24647d">01 / MEMBER</text>
+<text x="70" y="250" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Ask in English / Tamil</text>
+<text x="70" y="281" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Select demo context</text>
+<text x="70" y="305" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">General care question</text>
+<rect x="360" y="190" width="288" height="190" rx="16" fill="#fff5e5" stroke="#976623" stroke-width="1.6"/>
+<text x="382" y="220" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#976623">02 / APPLICATION</text>
+<text x="382" y="250" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Gate and retrieve</text>
+<text x="382" y="281" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Fixed routes first</text>
+<text x="382" y="305" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Find linked evidence</text>
+<rect x="672" y="190" width="288" height="190" rx="16" fill="#f3eefb" stroke="#7652a5" stroke-width="1.6"/>
+<text x="694" y="220" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#7652a5">03 / DRAFT MODE</text>
+<text x="694" y="250" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Withhold the draft</text>
+<text x="694" y="281" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Local template or AI</text>
+<text x="694" y="305" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Show source excerpts</text>
+<rect x="984" y="190" width="288" height="190" rx="16" fill="#e9f5ef" stroke="#14796b" stroke-width="1.6"/>
+<text x="1006" y="220" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#14796b">04 / REVIEWER</text>
+<text x="1006" y="250" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Review and release</text>
+<text x="1006" y="281" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Inspect + required notes</text>
+<text x="1006" y="305" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Approve + freshness check</text>
+<polyline points="336,282 354,282" fill="none" stroke="#6b8591" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="648,282 666,282" fill="none" stroke="#6b8591" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="960,282 978,282" fill="none" stroke="#6b8591" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="48" y="418" width="1224" height="90" rx="16" fill="#fcefeb" stroke="#a34c43" stroke-width="1.6"/>
+<text x="70" y="448" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#a34c43">CURRENT WARNING ROUTE</text>
+<text x="70" y="478" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Fixed emergency guidance appears immediately; optional AI and review are bypassed.</text>
+<text x="48" y="555" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#14796b">THREE PRACTICAL WORKFLOWS</text>
+<rect x="48" y="582" width="360" height="130" rx="16" fill="#edf4f9" stroke="#24647d" stroke-width="1.6"/>
+<text x="70" y="612" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#24647d">BP CHECK-IN / 01</text>
+<text x="70" y="642" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Confirm values + consent</text>
+<rect x="480" y="582" width="360" height="130" rx="16" fill="#edf4f9" stroke="#24647d" stroke-width="1.6"/>
+<text x="502" y="612" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#24647d">BP CHECK-IN / 02</text>
+<text x="502" y="642" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Save check-in + review</text>
+<text x="502" y="669" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">atomically</text>
+<rect x="912" y="582" width="360" height="130" rx="16" fill="#edf4f9" stroke="#24647d" stroke-width="1.6"/>
+<text x="934" y="612" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#24647d">BP CHECK-IN / 03</text>
+<text x="934" y="642" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Human follow-up / close</text>
+<polyline points="408,657 474,657" fill="none" stroke="#6b8591" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="840,657 906,657" fill="none" stroke="#6b8591" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="48" y="750" width="360" height="130" rx="16" fill="#e9f5ef" stroke="#14796b" stroke-width="1.6"/>
+<text x="70" y="780" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#14796b">SHARED CARE TASK / 01</text>
+<text x="70" y="810" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Request with sharing consent</text>
+<rect x="480" y="750" width="360" height="130" rx="16" fill="#e9f5ef" stroke="#14796b" stroke-width="1.6"/>
+<text x="502" y="780" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#14796b">SHARED CARE TASK / 02</text>
+<text x="502" y="810" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Record helper acceptance</text>
+<rect x="912" y="750" width="360" height="130" rx="16" fill="#e9f5ef" stroke="#14796b" stroke-width="1.6"/>
+<text x="934" y="780" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#14796b">SHARED CARE TASK / 03</text>
+<text x="934" y="810" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Record task completion</text>
+<polyline points="408,825 474,825" fill="none" stroke="#6b8591" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="840,825 906,825" fill="none" stroke="#6b8591" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="48" y="918" width="360" height="130" rx="16" fill="#fff5e5" stroke="#976623" stroke-width="1.6"/>
+<text x="70" y="948" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#976623">FAMILY BACKUP / 01</text>
+<text x="70" y="978" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Choose two distinct adults</text>
+<rect x="480" y="918" width="360" height="130" rx="16" fill="#fff5e5" stroke="#976623" stroke-width="1.6"/>
+<text x="502" y="948" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#976623">FAMILY BACKUP / 02</text>
+<text x="502" y="978" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Share routines and locations</text>
+<rect x="912" y="918" width="360" height="130" rx="16" fill="#fff5e5" stroke="#976623" stroke-width="1.6"/>
+<text x="934" y="948" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#976623">FAMILY BACKUP / 03</text>
+<text x="934" y="978" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Practise and record</text>
+<text x="934" y="1005" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">rehearsal</text>
+<polyline points="408,993 474,993" fill="none" stroke="#6b8591" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="840,993 906,993" fill="none" stroke="#6b8591" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="48" y="1090" width="1224" height="76" rx="16" fill="#edf4f9" stroke="#24647d" stroke-width="1.6"/>
+<text x="70" y="1120" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#24647d">LANGUAGE AND SCOPE</text>
+<text x="70" y="1150" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Saved notes keep their original language; unsaved inputs clear when demo context changes.</text>
+<text x="48" y="1185" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#526b77">No reminder, booking or remote helper acceptance is sent by this demo. Staffed pathways belong to the pilot roadmap.</text>
+</svg>

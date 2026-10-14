@@ -1,0 +1,51 @@
+{
+  "built_at": "2026-10-14T14:14:59.239055-06:00",
+  "python_tests": {
+    "passed": 52,
+    "failed": 0
+  },
+  "synthetic_evaluation": {
+    "passed": 45,
+    "total": 45,
+    "critical_failures": []
+  },
+  "browser": {
+    "passed": [
+      "English local RAG sources",
+      "Template queued",
+      "Template draft → human approval → household release",
+      "Confirmed/consented check-in recorded",
+      "Task requested → accepted → completed",
+      "Two-person family backup and rehearsal saved",
+      "Tamil interface and local RAG",
+      "Tamil emergency bypass",
+      "Tamil roadmap",
+      "390px mobile layout",
+      "Quality UI: live local eval run, redacted traces and metrics"
+    ],
+    "errors": [],
+    "dimensions": {
+      "viewport": 390,
+      "content": 390
+    }
+  },
+  "navigation_tabs": 8,
+  "openai": {
+    "live_api_tested": false,
+    "sdk_contract_tested_with_in_memory_transport": true,
+    "configuration_required": [
+      "OPENAI_API_KEY",
+      "OPENAI_MODEL"
+    ]
+  },
+  "clinical_release_allowed": false,
+  "clinical_content_and_tamil_review": "pending",
+  "runtime_data_in_source_archive": false,
+  "documentation": {
+    "markdown_files": 11,
+    "local_links_checked": 113,
+    "svg_illustrations": 3,
+    "fictional_screenshots": 3,
+    "visual_review_completed": true
+  }
+}

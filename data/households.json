@@ -1,0 +1,5 @@
+[
+  {"id":"HH-001","label_en":"Fictional household A","label_ta":"கற்பனை குடும்பம் A","members":[{"id":"A1","label_en":"Adult A","label_ta":"பெரியவர் A","age":55},{"id":"A2","label_en":"Adult B","label_ta":"பெரியவர் B","age":48},{"id":"A3","label_en":"Adult C","label_ta":"பெரியவர் C","age":26}]},
+  {"id":"HH-002","label_en":"Fictional household B","label_ta":"கற்பனை குடும்பம் B","members":[{"id":"B1","label_en":"Adult D","label_ta":"பெரியவர் D","age":61},{"id":"B2","label_en":"Adult E","label_ta":"பெரியவர் E","age":42},{"id":"B3","label_en":"Adult F","label_ta":"பெரியவர் F","age":29}]},
+  {"id":"HH-003","label_en":"Fictional household C","label_ta":"கற்பனை குடும்பம் C","members":[{"id":"C1","label_en":"Adult G","label_ta":"பெரியவர் G","age":53},{"id":"C2","label_en":"Adult H","label_ta":"பெரியவர் H","age":46},{"id":"C3","label_en":"Adult I","label_ta":"பெரியவர் I","age":31}]}
+]
