@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1320" height="1210" viewBox="0 0 1320 1210" role="img" aria-labelledby="title desc">
-<title id="title">Assurance: software evidence, operational signals, human gates</title><desc id="desc">Three pillars describe software regression tests, minimized local request traces and metrics, and human clinical/language review gates. The build has 52 tests, 45 synthetic cases and 11 browser checks. Live OpenAI and clinical field validation are absent.</desc>
+<title id="title">Assurance: software evidence, operational signals, human gates</title><desc id="desc">Three pillars describe software regression tests, minimized local request traces and metrics, and human clinical/language review gates. The build has 53 tests, 46 synthetic cases and 11 earlier browser checks. Live OpenAI and clinical field validation are absent.</desc>
 <defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto-start-reverse"><path d="M0,0 L9,4.5 L0,9" fill="#6b8591"/></marker></defs>
 <rect width="1320" height="100%" fill="#fafbf7"/>
 <rect width="1320" height="126" fill="#183747"/>
@@ -9,8 +9,8 @@
 <rect x="48" y="190" width="360" height="210" rx="16" fill="#edf4f9" stroke="#24647d" stroke-width="1.6"/>
 <text x="70" y="220" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#24647d">REPEATABLE SOFTWARE CHECKS</text>
 <text x="70" y="250" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">Evaluate behavior</text>
-<text x="70" y="281" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">45 cases: 29 English / 16 Tamil</text>
-<text x="70" y="305" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">29 cases marked critical</text>
+<text x="70" y="281" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">46 cases: 30 English / 16 Tamil</text>
+<text x="70" y="305" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">30 cases marked critical</text>
 <text x="70" y="329" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Routes and expected source IDs</text>
 <rect x="480" y="190" width="360" height="210" rx="16" fill="#e9f5ef" stroke="#14796b" stroke-width="1.6"/>
 <text x="502" y="220" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#14796b">LOCAL OPERATIONAL EVIDENCE</text>
@@ -26,7 +26,7 @@
 <text x="934" y="329" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Staffed referral agreement</text>
 <rect x="48" y="436" width="360" height="188" rx="16" fill="#edf4f9" stroke="#24647d" stroke-width="1.6"/>
 <text x="70" y="466" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#24647d">WORKFLOW / PROVIDER CONTRACTS</text>
-<text x="70" y="496" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">52 Python tests</text>
+<text x="70" y="496" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#183747">53 Python tests</text>
 <text x="70" y="527" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Scope, consent and state changes</text>
 <text x="70" y="551" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">Expiry, API failures and redaction</text>
 <text x="70" y="575" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#526b77">SDK transport tests; no live API</text>

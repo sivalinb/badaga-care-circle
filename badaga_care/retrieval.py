@@ -9,7 +9,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from .models import SearchHit
 from .safety import normalise
 
-STOPWORDS = set("a an the of to in is are be can do how what we i my our with for and or it this that at as on from have has should could would about person people one who everyone".split())
+STOPWORDS = set("a an the of to in is are be can do does did doing how what we i my our with for and or it this that at as on from have has should could would about person people one who everyone".split())
 STOPWORDS.update({"எப்படி", "என்ன", "நாம்", "என்", "எனக்கு", "ஒரு", "உள்ள", "மற்றும்", "அல்லது", "செய்ய"})
 
 

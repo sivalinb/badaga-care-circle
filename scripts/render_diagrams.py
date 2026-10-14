@@ -127,14 +127,14 @@ def workflows():
 def assurance():
     d = Diagram(1210, "Assurance: software evidence, operational signals, human gates",
                 "A passing regression suite does not establish clinical safety, fluent Tamil or delivered care.",
-                "Three pillars describe software regression tests, minimized local request traces and metrics, and human clinical/language review gates. The build has 52 tests, 45 synthetic cases and 11 browser checks. Live OpenAI and clinical field validation are absent.")
+                "Three pillars describe software regression tests, minimized local request traces and metrics, and human clinical/language review gates. The build has 53 tests, 46 synthetic cases and 11 earlier browser checks. Live OpenAI and clinical field validation are absent.")
     for x,label,title,lines,kind in [
-        (48,"Repeatable software checks", "Evaluate behavior", ["45 cases: 29 English / 16 Tamil", "29 cases marked critical", "Routes and expected source IDs"],"blue"),
+        (48,"Repeatable software checks", "Evaluate behavior", ["46 cases: 30 English / 16 Tamil", "30 cases marked critical", "Routes and expected source IDs"],"blue"),
         (480,"Local operational evidence", "Observe the pipeline", ["Random trace ID and UTC time", "Route, provider, status, sources", "Safety / retrieval / draft timing"],"green"),
         (912,"Accountable human ownership", "Approve the programme", ["Clinician and Tamil reviewer", "Resident usability sessions", "Staffed referral agreement"],"amber"),
     ]:
         d.card(x,190,360,210,label,title,lines,kind)
-    d.card(48, 436, 360, 188, "Workflow / provider contracts", "52 Python tests", ["Scope, consent and state changes", "Expiry, API failures and redaction", "SDK transport tests; no live API"], "blue")
+    d.card(48, 436, 360, 188, "Workflow / provider contracts", "53 Python tests", ["Scope, consent and state changes", "Expiry, API failures and redaction", "SDK transport tests; no live API"], "blue")
     d.card(480, 436, 360, 188, "Current dashboard window", "Latest 1,000 requests", ["p95 latency approximation", "Input / output token totals", "Provider and status counts"], "green")
     d.card(912, 436, 360, 188, "Current approval status", "Clinical release blocked", ["Medical / Tamil drafts unapproved", "Identity and storage need hardening", "No clinical field validation"], "red")
     d.card(48, 660, 360, 188, "Build-time UI verification", "11 browser checks", ["English / Tamil and human review", "Care tasks, check-ins and backup", "390px layout; zero JS errors"], "blue")

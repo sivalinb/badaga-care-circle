@@ -19,6 +19,13 @@ def test_regression_suite(settings):
     assert report["clinical_release_allowed"] is False
 
 
+def test_off_topic_question_with_generic_verb_has_no_evidence(svc):
+    answer = svc.ask(A, "How does quantum computing work?")
+    assert answer.route == "abstain"
+    assert answer.source_ids == []
+    assert answer.text == tr("no_source")
+
+
 @pytest.mark.parametrize("query", [
     "எனக்கு இப்போது மார்பில் அழுத்தமும் மூச்சுத்திணறலும் உள்ளது.",
     "என் அப்பாவுக்கு மூச்சு திணறல் உள்ளது.",

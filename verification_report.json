@@ -1,12 +1,12 @@
 {
-  "built_at": "2026-10-14T14:18:42.753225-06:00",
+  "built_at": "2026-10-14T14:48:29.531584-06:00",
   "python_tests": {
-    "passed": 52,
+    "passed": 53,
     "failed": 0
   },
   "synthetic_evaluation": {
-    "passed": 45,
-    "total": 45,
+    "passed": 46,
+    "total": 46,
     "critical_failures": []
   },
   "browser": {
@@ -27,7 +27,21 @@
     "dimensions": {
       "viewport": 390,
       "content": 390
-    }
+    },
+    "verification_scope": "Earlier full browser run; fresh six-request UI session is documented in docs/evidence.md"
+  },
+  "live_ui_evidence": {
+    "requests": 6,
+    "verified_scenarios": [
+      "local RAG",
+      "fixed emergency route",
+      "medication boundary",
+      "off-topic abstention",
+      "template withheld for human review",
+      "no-consent local fallback"
+    ],
+    "ui_evaluation_passed": 46,
+    "capture": "docs/evidence/live-demo.json"
   },
   "navigation_tabs": 8,
   "openai": {
@@ -42,10 +56,10 @@
   "clinical_content_and_tamil_review": "pending",
   "runtime_data_in_source_archive": false,
   "documentation": {
-    "markdown_files": 11,
-    "local_links_checked": 113,
+    "markdown_files": 12,
+    "local_links_checked": 137,
     "svg_illustrations": 3,
-    "fictional_screenshots": 3,
+    "fictional_screenshots": 9,
     "visual_review_completed": true
   }
 }

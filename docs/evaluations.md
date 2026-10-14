@@ -4,11 +4,11 @@
 
 ![Software evidence, operational telemetry and human release gates](assets/assurance.svg)
 
-The current build passed **52 Python tests, 45 synthetic cases and 11 browser checks**. These are software regression results, not evidence of clinical efficacy, comprehensive triage coverage or fluent Tamil medical wording. [Evaluation report](../evaluation_report.json) · [Build verification report](../verification_report.json).
+The current build passed **53 Python tests, 46 synthetic cases and 11 earlier browser checks**. A fresh six-request UI evidence session is documented in [live evidence](evidence.md). These are software regression results, not evidence of clinical efficacy, comprehensive triage coverage or fluent Tamil medical wording. [Evaluation report](../evaluation_report.json) · [Build verification report](../verification_report.json).
 
 ## Layer 1: repeatable bilingual route and retrieval cases
 
-[`data/eval_cases.json`](../data/eval_cases.json) contains **45 synthetic cases: 29 English and 16 Tamil**, including **29 marked critical**. The harness runs the same local source-excerpt mode against a fresh temporary database. No model provider is called.
+[`data/eval_cases.json`](../data/eval_cases.json) contains **46 synthetic cases: 30 English and 16 Tamil**, including **30 marked critical**. The harness runs the same local source-excerpt mode against a fresh temporary database. No model provider is called.
 
 | Expected route | Cases | Main behavior checked |
 |---|---:|---|
@@ -17,11 +17,13 @@ The current build passed **52 Python tests, 45 synthetic cases and 11 browser ch
 | `urgent_review` | 4 | Very-high-BP wording and boundary numbers get prompt-attention guidance |
 | `blocked` | 4 | Selected secrets and instruction-injection patterns are blocked |
 | `education` | 16 | General topics retrieve the expected source or fixed source reference |
-| `abstain` | 2 | Unsupported questions do not invent evidence |
+| `abstain` | 3 | Unsupported questions do not invent evidence, including a generic-verb overlap regression |
 
 For every case, the harness checks the expected route. A case may also require a source ID and/or an exact action substring. Tamil cases check that at least one Tamil Unicode character appears. A case passes only if all its checks pass. `software_gate_passed` requires every case to pass and no critical failures. `clinical_release_allowed` remains `false` regardless of the score.
 
 The Unicode check does not grade grammar or meaning. Expected-source membership does not measure ranking quality, completeness or citation entailment. The cases are authored to exercise known rules; the dataset is small and is not a representative or held-out clinical test set.
+
+The fresh UI check found that “How does quantum computing work?” retrieved health cards through the common verb “does”. The retriever now excludes `does`, `did` and `doing` from topic tokens. A new critical synthetic case and a separate workflow test require that question to abstain with no source IDs. This addresses the observed overlap; it does not establish comprehensive off-topic detection.
 
 ```bash
 python -m badaga_care eval --output evaluation_report.json

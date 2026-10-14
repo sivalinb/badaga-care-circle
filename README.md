@@ -2,6 +2,8 @@
 
 A runnable Python/Gradio demonstration for one hatti in the Nilgiris. It connects education, health check-ins, human review, shared caregiving tasks and family backup plans. English and Tamil interface text, source excerpts, fixed messages and the in-app roadmap are included.
 
+[![Demo software checks](https://github.com/sivalinb/badaga-care-circle/actions/workflows/ci.yml/badge.svg)](https://github.com/sivalinb/badaga-care-circle/actions/workflows/ci.yml)
+
 **Start here:** [Why and for whom](docs/purpose-and-pilot.md) · [Illustrated architecture](docs/architecture.md) · [User flows](docs/workflows.md) · [AI and RAG](docs/ai-and-rag.md) · [Technology choices](docs/technologies.md) · [Evaluations](docs/evaluations.md) · [Observability](docs/observability.md) · [90-day roadmap](ROADMAP.md)
 
 This release uses fictional households only. No clinician is monitoring it; it sends no messages, makes no emergency calls and creates no appointments or prescriptions. All medical content and Tamil translations are demo drafts awaiting clinician/native-speaker approval. The local role selector demonstrates access rules and is **not authentication**. SQLite is not an encrypted clinical store. Do not enter real patient data.
@@ -17,15 +19,45 @@ The intended beneficiaries are adults and families, caretakers, people receiving
 ![English guide screen with fictional households](docs/assets/demo-english.png)
 
 <details>
-<summary>Tamil interface and quality dashboard</summary>
+<summary>Tamil interface</summary>
 
 ![Tamil interface with bilingual navigation](docs/assets/demo-tamil.png)
 
-![Evaluation results, redacted traces and operational metrics](docs/assets/demo-quality.png)
-
 </details>
 
-The current build records **52 passing Python tests, 45/45 synthetic regression cases, and 11 successful browser checks**. See [the verification report](verification_report.json) and [what these results mean](docs/evaluations.md). No live OpenAI call or clinical field validation has been performed.
+The current build records **53 passing Python tests, 46/46 synthetic regression cases, and 11 earlier browser workflow checks**. Fresh screenshots below show a separate live verification session. See [the verification report](verification_report.json) and [what these results mean](docs/evaluations.md). No live OpenAI call or clinical field validation has been performed.
+
+## Working evidence: actual screens and downloadable results
+
+These screenshots were captured directly from the running Gradio demo, with fictional inputs. The accompanying [live evidence JSON](docs/evidence/live-demo.json) contains values exported using the quality widgets' **Copy** controls and hashes of the app source used for capture. Screenshots are cropped to the relevant panels for readability; [the full quality screen](docs/assets/evidence/live-quality-full.jpg) preserves the app context. No values were drawn into the images.
+
+### Evaluation run inside the app
+
+Clicking **Run local evaluation suite** produced **46/46 passing cases**, no critical failures, and `software_gate_passed: true`. Clinical release remains `false`. This is a local synthetic regression run, not a live-model or clinical evaluation.
+
+![Live Gradio evaluation showing 46 passing cases and no critical failures](docs/assets/evidence/live-evals.jpg)
+
+[Complete evaluation report](evaluation_report.json) · [Evaluation method and limitations](docs/evaluations.md)
+
+### Request traces from real demo interactions
+
+The captured session exercised local retrieval, a fixed warning route, a medication boundary, off-topic abstention, a pending template draft and an OpenAI-mode consent fallback. The trace panel records route, provider, status, source IDs, rule version and stage timing. Raw questions, BP readings and household identifiers are excluded from these traces.
+
+![Live redacted request traces from the Gradio quality screen](docs/assets/evidence/live-traces.jpg)
+
+[Download captured traces and metrics](docs/evidence/live-demo.json) · [Trace schema and boundaries](docs/observability.md)
+
+### Operational metrics from the same session
+
+The screenshot shows the actual request count, p95 latency approximation, provider/status counts and token totals. Tokens are zero for this session because its requests used local/fixed/template paths and a consent fallback; no OpenAI request was made. These timings describe a small local demonstration, not a production benchmark.
+
+![Live operational metrics showing six requests, latency, providers and statuses](docs/assets/evidence/live-metrics.jpg)
+
+### Reproducible checks on GitHub
+
+The badge at the top links to the latest workflow status. Every run exposes its test, eval, documentation and blocked-preflight steps, plus downloadable synthetic evaluation/JUnit reports. [Browse CI runs and artifacts](https://github.com/sivalinb/badaga-care-circle/actions/workflows/ci.yml).
+
+[How to reproduce this evidence](docs/evidence.md) · [Working RAG screenshot](docs/assets/evidence/live-rag.jpg) · [Corrected off-topic abstention screenshot](docs/assets/evidence/live-abstention.jpg)
 
 ## System at a glance
 

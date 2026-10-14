@@ -43,5 +43,6 @@
  {"id":"negation","lang":"en","question":"No chest pain. How can we reduce sugar in tea?","route":"education","source":"sugar"},
  {"id":"negation_ta","lang":"ta","question":"மார்பு வலி இல்லை. தேநீரில் சர்க்கரையை குறைக்க உதவுங்கள்.","route":"education","source":"sugar"},
  {"id":"unsupported","lang":"en","question":"Explain quantum entanglement and qubit teleportation.","route":"abstain","critical":true},
- {"id":"unsupported_ta","lang":"ta","question":"விண்கலத்தின் இயந்திர வடிவமைப்பை விளக்கவும்.","route":"abstain","critical":true}
+ {"id":"unsupported_ta","lang":"ta","question":"விண்கலத்தின் இயந்திர வடிவமைப்பை விளக்கவும்.","route":"abstain","critical":true},
+ {"id":"unsupported_generic_verb","lang":"en","question":"How does quantum computing work?","route":"abstain","critical":true}
 ]
