@@ -1,6 +1,6 @@
 {
   "requirements.txt": "bec041c93856ac2384cc40dfe11cd2ea418f6efd5949137d557909d339d9a0c4",
-  "verification_report.json": "fc7d7dac48f16993875482b03afd2ebd06213ae81b2fa5116a77898825feb197",
+  "verification_report.json": "5e0c863f0ec62eb38c1c622be57807d82dffd4b4d8a2d1160fb7af0d8175cf7c",
   "pyproject.toml": "944939f1effce2f4ab3c2ee8eb75f5be747149bd360ad9b77edfb00057f09e5c",
   "evaluation_report.json": "166af6a9393a7ee26ddf9bba5222837b72fa9bad08d86f37c2cb348912d7edb9",
   "README.md": "53f9d60eae58e1b5c1af716c183948fc0ca32a2575f13a4b6ad2cf1f16e708b6",
@@ -43,7 +43,7 @@
   "scripts/check_docs.py": "1282c2ff61ad6f407ef1b1f5b77dcc1ee8d28274a98c9c3988743e13a18e0829",
   "scripts/generate_source_register.py": "c873e337de7411e1d1a90414d928aecf548eb8056f96f915d639c49aca32c3ff",
   "scripts/render_diagrams.py": "14b072abc0be998485bc9a4976354f8d47f2a8eb313bfadc3bbbcb402e2d1900",
-  ".github/workflows/ci.yml": "f620c10dab526e7a019853d4adea8118d6ac7b16bf412064c884d4fe52bf24fb",
+  ".github/workflows/ci.yml": "aa1be1bfb164c494bf559489fb45ff235085864b7f1b9862ba08fe40a5a5ce05",
   "data/eval_cases.json": "a10b960a3d75dd53217a6c8d7851df4ad1909c767680e09ca2fe06d975acc078",
   "data/knowledge.json": "51d722aa96264990e914885f1823cc814471f9328c79af7f147153ba0f5c30a7",
   "data/households.json": "e3949c799da14f525f0f5796e17956678cf2d5465029ab81708e2241872ab603"
